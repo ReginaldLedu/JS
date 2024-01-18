@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./register.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<section class="form">
+		<form action="submit" class="register__form">
+			<label for="email">Адрес электронной почты</label>
+			 <input
+			 id="email"
+				type="text"
+				class="register__email"/>
+				<div class="email__error"></div>
+			 <label for="password">Пароль</label>
+			 <input
+			 id="password"
+				type="password"
+				class="register__password"/>
+			 <div class="password__error"></div>
+			 <label for="password__repeat">Повторите пароль</label>
+			 <input
+			 id="password__repeat"
+				type="password"
+				class="register__passwordRepeat"
+			 />
+			 <div class="passwordRepeat__error"></div>
+			 <label for="userName">Введите имя</label>
+			 <input
+			 maxlength="20"
+			 id="userName"
+				type="text"
+				class="register__name"				
+			 />
+			 <label for="userLastName">Введите фамилию</label>
+			 <input
+			 id="userLastName"
+			 maxlength="25"
+				type="text"
+				class="register__lastname"
+			 />
+			 <label for="userAge" class="register__userAgeLabel">Введите дату рождения</label>
+			 <input
+			 id="userAge"
+				type="date"				
+				class="register__userAge"
+			 />
+			 <div class="userAgeError"></div>
+			 <button disabled class="register__submit"> Зарегистрироваться </button>
+			</div>
+	
+	</form>
+</section>
+<script src="register.js"></script>
+</body>
+</html>

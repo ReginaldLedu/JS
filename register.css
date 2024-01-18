@@ -1,0 +1,96 @@
+* {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: coral;
+}
+
+.form {
+  width: 330px;
+  margin: auto;
+  background-color: white;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  border: none;
+}
+
+.register__form {
+  width: 300px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+label {
+  margin-top: 30px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+input {
+  margin-top: 8px;
+  width: 100%;
+  height: 20px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid coral;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.register__userAge {
+  margin-top: 0px;
+  height: 25px;
+}
+
+.register__userAgeLabel {
+  border-bottom: 1px solid coral;
+  width: 100%;
+  height: 20px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid coral;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.register__submit {
+  width: 300px;
+  height: 50px;
+  background-color: grey;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+button:disabled {
+  background-color: lightgrey;
+}
+
+.email__error,
+.password__error,
+.passwordRepeat__error,
+.userAgeError {
+  color: red;
+  font-weight: 600;
+}
